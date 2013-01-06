@@ -1,0 +1,21 @@
+fin
+
+Bored of looking at all the personal finance management softwares, I decided to write a simple one to manage my personal finance software. This will help storing my finance and also learn a bit of statistics to mine my personal finance.
+
+What we need
+
+A list of expenditures (one that can extended by the user)
+list of transaction
+
+Database
+---------
+
+Transaction:
+TID
+Date
+Comment
+Tag (Type of expenditure) -> 1 to 1 foreign key to Tags
+
+Tags: 
+TagID
+Description
