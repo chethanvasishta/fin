@@ -1,3 +1,10 @@
 from django.db import models
 
-# Create your models here.
+class Tag(models.Model):
+	desc = models.CharField(max_length=200)
+
+class Transaction(models.Model):
+	trans_date = models.DateTimeField('transaction date')
+	comments = models.CharField(max_length=200)
+	tag = models.ForeignKey(Tag)
+	is_credit = models.BooleanField()
