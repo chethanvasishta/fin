@@ -1,0 +1,13 @@
+<html>
+<body>
+<h1>List of transactions</h1>
+<!-- add a table -->
+<ul>
+{% for t in transaction_list.all %}
+	<li>
+		{{t.date}}
+	</li>
+{% endfor %}
+</ul>
+</body>
+</html>

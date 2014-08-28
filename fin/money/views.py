@@ -11,3 +11,7 @@ def all(request):
 	context={'transaction_list' : transaction_list}
 	return render(request, 'money/all.html', context)
 
+def add(request):
+	context={}
+	return render(request, 'money/add.html', context)
+

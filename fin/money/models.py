@@ -7,4 +7,4 @@ class Transaction(models.Model):
 	trans_date = models.DateTimeField('transaction date')
 	comments = models.CharField(max_length=200)
 	tag = models.ForeignKey(Tag)
-	is_credit = models.BooleanField()
+	amount = models.IntegerField()
